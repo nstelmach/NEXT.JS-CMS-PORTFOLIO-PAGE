@@ -1,0 +1,21 @@
+.wrapper {
+  padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.title {
+  margin-top: 3rem;
+  font-size: 6rem;
+  letter-spacing: 0.3rem;
+}
+
+.subtitle {
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  text-shadow: -3px 3px #6b6c6e;
+  margin: 2rem 0;
+}

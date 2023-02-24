@@ -7,7 +7,9 @@ export default function Header() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.logo}>
-        <Image src={logo} alt="logo" width={50} height={50} />
+        <a href="#home">
+          <Image src={logo} alt="logo" width={50} height={50} />
+        </a>
       </div>
       <div className={styles.buttonWrapper}>
         <HeaderButton label="home" />
