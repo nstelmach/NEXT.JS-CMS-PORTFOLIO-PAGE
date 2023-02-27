@@ -2,14 +2,15 @@ import HeaderButton from "./HeaderButton";
 import Image from "next/image";
 import logo from "../images/logo.png";
 import styles from "../styles/Header.module.css";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.logo}>
-        <a href="#home">
+        <Link href="#home">
           <Image src={logo} alt="logo" width={50} height={50} />
-        </a>
+        </Link>
       </div>
       <div className={styles.buttonWrapper}>
         <HeaderButton label="home" />

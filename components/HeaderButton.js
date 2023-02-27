@@ -1,9 +1,10 @@
 import styles from "../styles/HeaderButton.module.css";
+import Link from "next/link";
 
 export default function HeaderButton({ label }) {
   return (
-    <a className={styles.button} href={`#${label}`}>
+    <Link className={styles.button} href={`#${label}`}>
       // {label}
-    </a>
+    </Link>
   );
 }
