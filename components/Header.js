@@ -1,6 +1,6 @@
 import HeaderButton from "./HeaderButton";
 import Image from "next/image";
-import logo from "../images/logo.png";
+import logo from "../public/images/logo.png";
 import styles from "../styles/Header.module.css";
 import Link from "next/link";
 
