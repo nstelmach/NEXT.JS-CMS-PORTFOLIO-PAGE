@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -11,9 +17,10 @@ body {
   font-family: "Roboto Mono", sans-serif;
   color: #ffffff;
   min-height: 100vh;
-  background-image: url("../public/images/background.jpg");
+  /* background-image: url("../public/images/background.jpg");
   background-repeat: repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #20232c;
 }
 
 a {

@@ -5,11 +5,17 @@ import { PageBlockRenderer } from "../blocks/PageBlockRenderer";
 
 export default function Page({ story: initialStory }) {
   const story = useStoryblokState(initialStory);
-
   console.log(story);
 
+  const navLinks = story?.content.navLinks.map((navLink) => ({
+    key: navLink._uid,
+    label: navLink.label,
+    href:
+      navLink.label === "resume" ? navLink.link.url : "#" + navLink.link.anchor,
+  }));
+
   return (
-    <Layout>
+    <Layout navLinks={navLinks}>
       {(story?.content?.body || []).map((props) => {
         return <PageBlockRenderer content={props} key={props._uid} />;
       })}

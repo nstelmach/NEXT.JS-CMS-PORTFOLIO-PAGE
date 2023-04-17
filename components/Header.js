@@ -1,24 +1,21 @@
 import HeaderButton from "./HeaderButton";
 import Image from "next/image";
 import logo from "../public/images/logo.png";
-import styles from "../styles/Header.module.css";
 import Link from "next/link";
+import ResumeLink from "./ResumeLink";
 
-export default function Header() {
+export default function Header({ navLinks }) {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.logo}>
+    <div className="bg-dark-grey flex justify-center items-center h-24 fixed w-full px-12 z-10">
+      <div className="mx-4 hover:cursor-pointer">
         <Link href="#home">
           <Image src={logo} alt="logo" width={50} height={50} />
         </Link>
       </div>
-      <div className={styles.buttonWrapper}>
-        <HeaderButton label="home" />
-        <HeaderButton label="about" />
-        <HeaderButton label="work" />
-        <HeaderButton label="experience" />
-        <HeaderButton label="contact" />
-        <HeaderButton label="resume" />
+      <div className="grow text-center">
+        {navLinks?.map(({ key, href, label }) => {
+          return <HeaderButton label={label} href={href} key={key} />;
+        })}
       </div>
     </div>
   );
