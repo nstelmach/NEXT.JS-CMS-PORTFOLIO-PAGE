@@ -23,6 +23,8 @@ module.exports = {
         white: "0px 8px 24px rgba(149, 157, 165, 0.2)",
       },
       letterSpacing: {
+        xs: "0.1rem",
+        s: "0.2rem",
         xl: "0.3rem",
         xxl: "0.4rem",
       },
