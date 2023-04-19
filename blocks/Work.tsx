@@ -1,10 +1,11 @@
 import Link from "next/link.js";
 import { icons } from "../constants/icons";
-import { Projects } from "../types/types";
+import { SBProjects } from "../types/types";
+import Container from "../components/Container";
 
 type WorkProps = {
   title: string;
-  Projects: Projects;
+  Projects: SBProjects;
 };
 
 export default function Work(props: WorkProps) {
@@ -21,8 +22,6 @@ export default function Work(props: WorkProps) {
     gitHubTitle: project.links[1].name,
     technologies: project.technologies,
   }));
-
-  const parse = require("html-react-parser");
 
   const project = projectsObj.map(
     ({
@@ -72,7 +71,7 @@ export default function Work(props: WorkProps) {
                   key={icons[icon]}
                   className="m-2 hover:text-light-grey hover:cursor-pointer"
                 >
-                  {parse(icons[icon] || "")}
+                  {icons[icon]}
                 </div>
               ))}
             </div>
@@ -82,13 +81,15 @@ export default function Work(props: WorkProps) {
     )
   );
   return (
-    <div id="work" className="flex justify-center items-center flex-col">
-      <h2 className="text-3xl sm:text-5xl md:text-6xl tracking-xl lg:tracking-xxl drop-shadow-s mb-16 mt-6 sm:mb-20 sm:mt-8 md:mb-24 md:mt-10">
-        {title}
-      </h2>
-      <div className="grid md:gap-5 gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 sm:p-12 p-8 mx-5 bg-[url('../public/images/white-concrete-wall.jpg')] bg-repeat bg-cover shadow-white sm:max-w-2xl max-w-sm md:max-w-3xl lg:max-w-5xl xl:max-w-6xl rounded-lg">
-        {project}
+    <Container>
+      <div id="work" className="flex justify-center items-center flex-col">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl tracking-xl lg:tracking-xxl drop-shadow-s mb-16 mt-6 sm:mb-20 sm:mt-8 md:mb-24 md:mt-10">
+          {title}
+        </h2>
+        <div className="grid md:gap-5 gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 sm:p-12 p-8 bg-[url('../public/images/white-concrete-wall.jpg')] bg-repeat bg-cover shadow-white sm:max-w-2xl max-w-sm md:max-w-3xl lg:max-w-5xl xl:max-w-6xl rounded-lg">
+          {project}
+        </div>
       </div>
-    </div>
+    </Container>
   );
 }

@@ -2,19 +2,16 @@ import Layout from "../components/Layout";
 
 import { useStoryblokState, getStoryblokApi } from "@storyblok/react";
 import { PageBlockRenderer } from "../blocks/PageBlockRenderer";
-import { NavLink, NavLinks } from "../types/types";
+import { SBNavLink, NavLinks } from "../types/types";
 
 export default function Page({ story: initialStory }) {
-  const story = useStoryblokState(initialStory);
+  const story = useStoryblokState<Record<string, any>>(initialStory);
 
   const navLinks: NavLinks = story?.content.navLinks.map(
-    (navLink: NavLink) => ({
+    (navLink: SBNavLink) => ({
       key: navLink._uid,
       label: navLink.label,
-      href:
-        navLink.label === "resume"
-          ? navLink.link.url
-          : "#" + navLink.link.anchor,
+      href: navLink.link.url || "#" + navLink.link.anchor,
     })
   );
 
@@ -30,8 +27,10 @@ export default function Page({ story: initialStory }) {
 export async function getStaticProps({ params, preview }) {
   let slug = params.slug ? params.slug.join("/") : "home";
 
+  const version = preview ? "draft" : ("published" as "draft" | "published");
+
   let sbParams = {
-    version: preview ? "draft" : "published",
+    version,
   };
 
   let data = null;
@@ -46,8 +45,8 @@ export async function getStaticProps({ params, preview }) {
 
   return {
     props: {
-      story: data ? data.story : false,
-      key: data ? data.story.id : false,
+      story: data?.story,
+      key: data?.story?.id,
     },
     revalidate: 3600,
   };

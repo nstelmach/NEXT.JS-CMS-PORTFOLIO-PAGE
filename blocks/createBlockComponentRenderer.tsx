@@ -1,5 +1,3 @@
-import SbEditable from "@storyblok/react";
-
 export const createBlockComponentRenderer =
   (typeToBlockComponent) =>
   ({ content, ...restProps }) => {
@@ -14,12 +12,10 @@ export const createBlockComponentRenderer =
 
     // fallback if the component doesn't exist
     return (
-      <SbEditable>
-        <div className="w-full overflow-hidden">
-          The component <strong>{content.component}</strong> has not been
-          created yet.
-          <pre>{JSON.stringify(content, null, 2)}</pre>
-        </div>
-      </SbEditable>
+      <div className="w-full overflow-hidden">
+        The component <strong>{content.component}</strong> has not been created
+        yet.
+        <pre>{JSON.stringify(content, null, 2)}</pre>
+      </div>
     );
   };

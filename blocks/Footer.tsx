@@ -1,25 +1,12 @@
 import Link from "next/link";
+import { SBLink } from "../types/types";
 
 type FooterProps = {
   email: string;
   phone: string;
   copyrights: string;
-  github: {
-    cached_url: string;
-    fieldtype: string;
-    id: string;
-    linktype: string;
-    target: string;
-    url: string;
-  };
-  linkedin: {
-    cached_url: string;
-    fieldtype: string;
-    id: string;
-    linktype: string;
-    target: string;
-    url: string;
-  };
+  github: SBLink;
+  linkedin: SBLink;
 };
 
 export default function Footer(props: FooterProps) {

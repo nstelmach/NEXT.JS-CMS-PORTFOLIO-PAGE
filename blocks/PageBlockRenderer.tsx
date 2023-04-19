@@ -1,10 +1,10 @@
 import { createBlockComponentRenderer } from "./createBlockComponentRenderer";
-import Home from "../components/Home";
-import AboutMe from "../components/AboutMe";
-import IconBar from "../components/IconBar";
-import Work from "../components/Work";
-import Experience from "../components/Experience";
-import Footer from "../components/Footer";
+import Home from "./Home";
+import AboutMe from "./AboutMe";
+import IconBar from "./IconBar";
+import Work from "./Work";
+import Experience from "./Experience";
+import Footer from "./Footer";
 
 const PageComponents = {
   Home: Home,
