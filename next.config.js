@@ -2,5 +2,13 @@ module.exports = {
   images: {
     domains: ["a.storyblok.com"],
   },
-  basePath: "/",
+  async redirects() {
+    return [
+      {
+        source: "/home",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
 };
