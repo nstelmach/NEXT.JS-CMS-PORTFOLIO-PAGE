@@ -69,7 +69,7 @@ export default function Work(props: WorkProps) {
               {technologies.map((icon) => (
                 <div
                   key={icons[icon]}
-                  className="m-2 hover:text-light-grey hover:cursor-pointer"
+                  className="m-2 hover:text-light-grey hover:cursor-pointer text-4xl"
                 >
                   {icons[icon]}
                 </div>
