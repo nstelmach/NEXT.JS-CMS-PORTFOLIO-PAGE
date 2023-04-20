@@ -2,7 +2,7 @@ This is my portfolio project. It contains sections like home, about, work, exper
 
 Link to the application: portfolio-nstelmach.vercel.app
 
-An example of CMS usage - Storyblock
+An example of CMS usage - Storyblok
 
 ![sb6](https://user-images.githubusercontent.com/90278376/233377427-789ce2d4-ca7e-4031-b88e-7e50329006dc.jpg)
 ![sb2](https://user-images.githubusercontent.com/90278376/233377284-43406123-c00b-4149-9d7e-0e1300d6871d.jpg)
