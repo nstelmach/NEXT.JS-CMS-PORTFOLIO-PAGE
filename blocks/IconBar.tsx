@@ -16,7 +16,8 @@ export default function IconBar(props: IconBarProps) {
           <div className="flex shrink-0 justify-around items-center gap-20 min-w-full animate-scroll-left">
             {iconBar.map((technology) => (
               <div className="flex flex-col items-center justify-center">
-                {technology.icon}
+                <div className="text-4xl"> {technology.icon}</div>
+
                 <p className="my-2">{technology.name}</p>
               </div>
             ))}
@@ -27,8 +28,8 @@ export default function IconBar(props: IconBarProps) {
             className="flex shrink-0 justify-around items-center gap-20 min-w-full animate-scroll-left"
           >
             {iconBar.map((technology) => (
-              <div className="flex flex-col items-center justify-center text-4xl">
-                {technology.icon}
+              <div className="flex flex-col items-center justify-center">
+                <div className="text-4xl"> {technology.icon}</div>
                 <p className="my-2">{technology.name}</p>
               </div>
             ))}
