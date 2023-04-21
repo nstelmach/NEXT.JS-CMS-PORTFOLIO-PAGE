@@ -10,16 +10,16 @@ type WorkProps = {
 
 export default function Work(props: WorkProps) {
   const { title, Projects } = props;
-
+  console.log(Projects);
   const projectsObj = Projects.map((project) => ({
     key: project._uid,
     title: project.title,
     image: project.image.filename,
     description: project.description,
-    appLink: project.links[0].link.url,
-    appTitle: project.links[0].name,
-    gitHubLink: project.links[1].link.url,
-    gitHubTitle: project.links[1].name,
+    appLink: project.links[1].link.url,
+    appTitle: project.links[1].name,
+    gitHubLink: project.links[0].link.url,
+    gitHubTitle: project.links[0].name,
     technologies: project.technologies,
   }));
 
