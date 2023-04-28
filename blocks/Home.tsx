@@ -16,7 +16,8 @@ export default function Home(props: HomeProps) {
         <h1 className="lg:text-8xl md:text-7xl text-5xl tracking-xs lg:tracking-xl text-center mx-2">
           {title}
         </h1>
-        <h5 className="lg:text-5xl md:text-4xl text-2xl tracking-s lg:tracking-xxl drop-shadow-s my-8 text-center">
+
+        <h5 className="lg:text-5xl md:text-4xl text-2xl tracking-s lg:tracking-xxl drop-shadow-s my-8 text-center ">
           {subtitle}
         </h5>
       </Container>

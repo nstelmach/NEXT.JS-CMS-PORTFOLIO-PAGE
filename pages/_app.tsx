@@ -13,6 +13,8 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Natalia Stelmach Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico"></link>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
