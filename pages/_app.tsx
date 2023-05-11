@@ -3,8 +3,10 @@ import { storyblokInit, apiPlugin } from "@storyblok/react";
 import Head from "next/head";
 import Script from "next/script";
 
+const STORYBLOK_ACCESS_TOKEN = process.env.NEXT_PUBLIC_STORYBLOK_ACCESS_TOKEN;
+
 storyblokInit({
-  accessToken: "3AkVhZJ53yxuVWSBqpDFOAtt",
+  accessToken: STORYBLOK_ACCESS_TOKEN,
   use: [apiPlugin],
 });
 

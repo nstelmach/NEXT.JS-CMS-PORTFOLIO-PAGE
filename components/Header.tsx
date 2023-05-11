@@ -1,6 +1,6 @@
 import HeaderButton from "./HeaderButton";
 import Image from "next/image";
-import logo2 from "../public/images/logo2.png";
+import logo from "../public/images/logo2.png";
 import Link from "next/link";
 import { NavLinks } from "../types/types";
 
@@ -13,7 +13,7 @@ export default function Header({ navLinks }: HeaderProps) {
     <div className="bg-dark-grey flex justify-center items-center h-24 fixed w-full lg:px-12 px-4 z-10">
       <div className="lg:mx-4 mx-2 hover:cursor-pointer">
         <Link href="#home">
-          <Image src={logo2} alt="logo" width={100} height={100} />
+          <Image src={logo} alt="logo" width={100} height={100} />
         </Link>
       </div>
       <div className="flex justify-center items-center flex-wrap grow text-center">
