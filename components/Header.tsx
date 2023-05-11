@@ -1,6 +1,6 @@
 import HeaderButton from "./HeaderButton";
 import Image from "next/image";
-import logo from "../public/images/logo2.png";
+import logo from "../public/images/logo.png";
 import Link from "next/link";
 import { NavLinks } from "../types/types";
 
