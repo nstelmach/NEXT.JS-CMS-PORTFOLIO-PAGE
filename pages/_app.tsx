@@ -16,7 +16,10 @@ export default function MyApp({ Component, pageProps }) {
       <Head>
         <title>Natalia Stelmach Portfolio</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico"></link>
-
+        <meta
+          name="description"
+          content="This is my portfolio project. It contains sections like home, about, work, experience, contact and resume. Includes several animations. It is made with CMS. "
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
