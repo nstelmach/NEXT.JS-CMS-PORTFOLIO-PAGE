@@ -6,7 +6,7 @@ import Script from "next/script";
 const STORYBLOK_ACCESS_TOKEN = process.env.NEXT_PUBLIC_STORYBLOK_ACCESS_TOKEN;
 
 storyblokInit({
-  accessToken: STORYBLOK_ACCESS_TOKEN,
+  accessToken: "3AkVhZJ53yxuVWSBqpDFOAtt",
   use: [apiPlugin],
 });
 
