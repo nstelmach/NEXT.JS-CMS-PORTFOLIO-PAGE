@@ -15,10 +15,10 @@ export default function Work(props: WorkProps) {
     title: project.title,
     image: project.image.filename,
     description: project.description,
-    appLink: project.links[1].link.url,
-    appTitle: project.links[1].name,
-    gitHubLink: project.links[0].link.url,
-    gitHubTitle: project.links[0].name,
+    appLink: project.links[1]?.link.url,
+    appTitle: project.links[1]?.name,
+    gitHubLink: project.links[0]?.link.url,
+    gitHubTitle: project.links[0]?.name,
     technologies: project.technologies,
   }));
 
@@ -38,7 +38,7 @@ export default function Work(props: WorkProps) {
         key={key}
         className="flex justify-center items-center flex-col rounded-lg bg-dark-grey shadow-grey max-w-sm p-5"
       >
-        <h2 className="text-xl mb-3 font-semibold tracking-xl hover:text-2xl drop-shadow-xs hover:transition-all hover:cursor-pointer">
+        <h2 className="text-xl mb-3 text-center font-semibold tracking-xl hover:text-2xl drop-shadow-xs hover:transition-all hover:cursor-pointer">
           {title}
         </h2>
 
@@ -49,20 +49,24 @@ export default function Work(props: WorkProps) {
 
           <div className="flex justify-center items-center flex-col max-w-full">
             <div className="flex justify-center items-center m-3 ">
-              <Link
-                className="mx-5 hover:text-xl hover:drop-shadow-xs hover:transition-all hover:underline text-center"
-                href={appLink}
-                target="_blank"
-              >
-                {appTitle}
-              </Link>
-              <Link
-                className="mx-5 hover:text-xl hover:drop-shadow-xs hover:transition-all hover:underline text-center"
-                href={gitHubLink}
-                target="_blank"
-              >
-                {gitHubTitle}
-              </Link>
+              {appLink && (
+                <Link
+                  className="mx-5 hover:text-xl hover:drop-shadow-xs hover:transition-all hover:underline text-center"
+                  href={appLink}
+                  target="_blank"
+                >
+                  {appTitle}
+                </Link>
+              )}
+              {gitHubLink && (
+                <Link
+                  className="mx-5 hover:text-xl hover:drop-shadow-xs hover:transition-all hover:underline text-center"
+                  href={gitHubLink}
+                  target="_blank"
+                >
+                  {gitHubTitle}
+                </Link>
+              )}
             </div>
             <div className="flex flex-row justify-center items-center">
               {technologies.map((icon) => (
