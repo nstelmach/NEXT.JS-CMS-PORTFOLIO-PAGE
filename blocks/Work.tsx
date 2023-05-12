@@ -85,7 +85,7 @@ export default function Work(props: WorkProps) {
         <h2 className="text-3xl sm:text-5xl md:text-6xl tracking-xl lg:tracking-xxl drop-shadow-s mb-16 mt-6 sm:mb-20 sm:mt-8 md:mb-24 md:mt-10">
           {title}
         </h2>
-        <div className="grid justify-center md:gap-5 gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 sm:p-12 p-8 bg-[url('../public/images/white-concrete-wall.jpg')] bg-repeat bg-cover shadow-white sm:max-w-2xl max-w-sm md:max-w-3xl lg:max-w-5xl xl:max-w-6xl rounded-lg">
+        <div className="grid md:gap-5 gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 sm:p-12 p-8 bg-[url('../public/images/white-concrete-wall.jpg')] bg-repeat bg-cover shadow-white sm:max-w-2xl max-w-sm md:max-w-3xl lg:max-w-5xl xl:max-w-6xl rounded-lg">
           {project}
         </div>
       </div>
