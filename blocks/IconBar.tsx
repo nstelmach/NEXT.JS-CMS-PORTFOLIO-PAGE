@@ -1,4 +1,5 @@
 import { iconBar } from "../constants/icons";
+import { uuid } from "uuidv4";
 
 type IconBarProps = {
   title: string;
@@ -16,7 +17,7 @@ export default function IconBar(props: IconBarProps) {
           <div className="flex shrink-0 justify-around items-center gap-20 min-w-full animate-scroll-left">
             {iconBar.map((technology) => (
               <div
-                key={technology.name}
+                key={uuid()}
                 className="flex flex-col items-center justify-center"
               >
                 <div className="text-4xl"> {technology.icon}</div>
@@ -32,7 +33,7 @@ export default function IconBar(props: IconBarProps) {
           >
             {iconBar.map((technology) => (
               <div
-                key={technology.name}
+                key={uuid()}
                 className="flex flex-col items-center justify-center"
               >
                 <div className="text-4xl"> {technology.icon}</div>

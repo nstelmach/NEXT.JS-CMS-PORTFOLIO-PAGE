@@ -45,7 +45,7 @@ export default function Experience(props: ExperienceProps) {
         <h2 className="text-3xl sm:text-5xl md:text-6xl tracking-xl lg:tracking-xxl drop-shadow-s mb-16 mt-12 sm:mb-20 sm:mt-16 md:mb-24 lg:mt-20">
           {title}
         </h2>
-        <div className="bg-[url('../public/images/white-concrete-wall.jpg')] bg-repeat bg-cover shadow-white max-w-7xl sm:max-w-xl rounded-lg">
+        <div className="bg-[url('../public/images/white-concrete-wall.jpg')] bg-repeat bg-cover shadow-white max-w-7xl sm:max-w-2xl rounded-lg">
           {jobs.map(({ position, date, id, description }) => (
             <div key={id}>
               <ExperienceTitle

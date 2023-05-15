@@ -13,7 +13,7 @@ export default function Footer(props: FooterProps) {
   const { email, phone, copyrights, github, linkedin } = props;
 
   return (
-    <div
+    <footer
       id="contact"
       className="bg-dark-grey flex justify-center items-center flex-col py-5 w-full mt-12 border-solid border-t border-white"
     >
@@ -39,6 +39,6 @@ export default function Footer(props: FooterProps) {
         <span className="text-lg ">&copy;</span>
         {copyrights}
       </div>
-    </div>
+    </footer>
   );
 }

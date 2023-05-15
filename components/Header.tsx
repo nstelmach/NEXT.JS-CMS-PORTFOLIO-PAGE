@@ -10,7 +10,7 @@ type HeaderProps = {
 
 export default function Header({ navLinks }: HeaderProps) {
   return (
-    <div className="bg-dark-grey flex justify-center items-center h-24 fixed w-full lg:px-12 px-4 z-10">
+    <nav className="bg-dark-grey flex justify-center items-center h-24 fixed w-full lg:px-12 px-4 z-10">
       <div className="lg:mx-4 mx-2 hover:cursor-pointer">
         <Link href="#home">
           <Image src={logo} alt="logo" width={100} height={100} />
@@ -21,6 +21,6 @@ export default function Header({ navLinks }: HeaderProps) {
           return <HeaderButton label={label} href={href} key={key} />;
         })}
       </div>
-    </div>
+    </nav>
   );
 }

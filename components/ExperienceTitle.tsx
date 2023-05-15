@@ -10,9 +10,9 @@ export default function ExperienceTitle(props: ExperienceTitleProps) {
 
   return (
     <div className="flex items-center justify-between rounded-lg bg-dark-grey shadow-grey max-w-2xl m-6 sm:text-lg">
-      <div className="p-4 basis-1/2">{position}</div>
+      <div className="p-4 flex-1">{position}</div>
 
-      <div className="p-4 sm:whitespace-nowrap  basis-1/2">{date}</div>
+      <div className="p-4  flex-1">{date}</div>
 
       <div onClick={onClickHandler} className="hover:cursor-pointer">
         {isVisibleDiv ? (

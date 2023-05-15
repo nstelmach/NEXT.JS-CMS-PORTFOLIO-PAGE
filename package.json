@@ -15,7 +15,9 @@
     "react": "18.2.0",
     "react-animated-css": "^1.2.1",
     "react-dom": "18.2.0",
-    "react-pdf": "^6.2.2"
+    "react-pdf": "^6.2.2",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
