@@ -39,7 +39,6 @@ export default function MyApp({ Component, pageProps }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
         ></link>
       </Head>
-      <Script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></Script>
       <Script
         src="https://kit.fontawesome.com/49fa9466f5.js"
         crossOrigin="anonymous"
