@@ -14,11 +14,11 @@ export const icons = {
 export const iconBar = [
   {
     icon: <i className="devicon-html5-plain"></i>,
-    name: "HTML5",
+    name: "HTML",
   },
   {
     icon: <i className="devicon-css3-plain"></i>,
-    name: "CSS3",
+    name: "CSS",
   },
   {
     icon: <i className="devicon-javascript-plain"></i>,
@@ -26,7 +26,7 @@ export const iconBar = [
   },
   {
     icon: <i className="devicon-react-original"></i>,
-    name: "React.js",
+    name: "React",
   },
   {
     icon: <i className="devicon-redux-original"></i>,
@@ -39,6 +39,10 @@ export const iconBar = [
   {
     icon: <i className="devicon-nextjs-original"></i>,
     name: "Next.js",
+  },
+  {
+    icon: <i className="devicon-jest-plain"></i>,
+    name: "Jest",
   },
   {
     icon: <i className="devicon-firebase-plain"></i>,
@@ -61,8 +65,16 @@ export const iconBar = [
     name: "GitHub",
   },
   {
+    icon: <i className="devicon-bitbucket-original"></i>,
+    name: "Bitbucket",
+  },
+  {
     icon: <i className="devicon-vscode-plain"></i>,
     name: "VS Code",
+  },
+  {
+    icon: <i className="devicon-intellij-plain"></i>,
+    name: "IntelliJ",
   },
   {
     icon: <i className="devicon-npm-original-wordmark"></i>,
@@ -71,5 +83,15 @@ export const iconBar = [
   {
     icon: <i className="devicon-webpack-plain"></i>,
     name: "Webpack",
+  },
+
+  {
+    icon: <i className="devicon-jira-plain"></i>,
+
+    name: "Jira",
+  },
+  {
+    icon: <i className="devicon-slack-plain"></i>,
+    name: "Slack",
   },
 ];
