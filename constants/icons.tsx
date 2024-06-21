@@ -45,8 +45,16 @@ export const iconBar = [
     name: "Jest",
   },
   {
+    icon: <i className="devicon-playwright-plain"></i>,
+    name: "Playwright",
+  },
+  {
     icon: <i className="devicon-firebase-plain"></i>,
     name: "Firebase",
+  },
+  {
+    icon: <i className="devicon-mongodb-plain"></i>,
+    name: "MongoDB",
   },
   {
     icon: <i className="devicon-tailwindcss-plain"></i>,
@@ -56,6 +64,15 @@ export const iconBar = [
     icon: <i className="devicon-bootstrap-plain"></i>,
     name: "Bootstrap",
   },
+  { icon: <i className="devicon-materialui-plain"></i>, name: "Material UI" },
+  {
+    icon: <i className="devicon-lodash-plain"></i>,
+    name: "Lodash",
+  },
+  {
+    icon: <i className="devicon-eslint-plain"></i>,
+    name: "ESLint",
+  },
   {
     icon: <i className="devicon-git-plain"></i>,
     name: "Git",
@@ -63,6 +80,10 @@ export const iconBar = [
   {
     icon: <i className="devicon-github-original"></i>,
     name: "GitHub",
+  },
+  {
+    icon: <i className="devicon-vercel-original"></i>,
+    name: "Vercel",
   },
   {
     icon: <i className="devicon-bitbucket-original"></i>,
@@ -81,13 +102,23 @@ export const iconBar = [
     name: "Npm",
   },
   {
+    icon: <i className="devicon-pnpm-plain"></i>,
+    name: "Pnpm",
+  },
+  {
+    icon: <i className="devicon-yarn-original"></i>,
+    name: "Yarn",
+  },
+  {
+    icon: <i className="devicon-homebrew-plain"></i>,
+    name: "Homebrew",
+  },
+  {
     icon: <i className="devicon-webpack-plain"></i>,
     name: "Webpack",
   },
-
   {
     icon: <i className="devicon-jira-plain"></i>,
-
     name: "Jira",
   },
   {
