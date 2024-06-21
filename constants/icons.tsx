@@ -9,6 +9,9 @@ export const icons = {
   bootstrap: <i className="devicon-bootstrap-plain"></i>,
   redux: <i className="devicon-redux-original"></i>,
   HTML: <i className="devicon-html5-plain"></i>,
+  jest: <i className="devicon-jest-plain"></i>,
+  mongodb: <i className="devicon-mongodb-plain"></i>,
+  materialui: <i className="devicon-materialui-plain"></i>,
 };
 
 export const iconBar = [
