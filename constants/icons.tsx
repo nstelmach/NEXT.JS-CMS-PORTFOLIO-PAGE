@@ -12,6 +12,8 @@ export const icons = {
   jest: <i className="devicon-jest-plain"></i>,
   mongodb: <i className="devicon-mongodb-plain"></i>,
   materialui: <i className="devicon-materialui-plain"></i>,
+  prisma: <i className="devicon-prisma-original"></i>,
+  postgresql: <i className="devicon-postgresql-plain"></i>,
 };
 
 export const iconBar = [
@@ -52,6 +54,10 @@ export const iconBar = [
     name: "Playwright",
   },
   {
+    icon: <i className="devicon-prisma-original"></i>,
+    name: "Prisma",
+  },
+  {
     icon: <i className="devicon-firebase-plain"></i>,
     name: "Firebase",
   },
@@ -68,6 +74,7 @@ export const iconBar = [
     name: "Bootstrap",
   },
   { icon: <i className="devicon-materialui-plain"></i>, name: "Material UI" },
+  { icon: <i className="devicon-postgresql-plain"></i>, name: "PostgreSQL" },
   {
     icon: <i className="devicon-lodash-plain"></i>,
     name: "Lodash",
