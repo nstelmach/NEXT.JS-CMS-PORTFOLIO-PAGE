@@ -1,7 +1,7 @@
-import "../styles/globals.css";
-import { storyblokInit, apiPlugin } from "@storyblok/react";
+import { apiPlugin, storyblokInit } from "@storyblok/react";
 import Head from "next/head";
 import Script from "next/script";
+import "../styles/globals.css";
 
 const STORYBLOK_ACCESS_TOKEN = process.env.NEXT_PUBLIC_STORYBLOK_ACCESS_TOKEN;
 
@@ -30,9 +30,11 @@ export default function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Montserrat:wght@400;500&family=Roboto&family=Roboto+Mono:wght@500&display=swap"
           rel="stylesheet"
         />
+
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
         <link
           rel="stylesheet"
