@@ -4,7 +4,7 @@ export const icons = {
   firebase: <i className="devicon-firebase-plain"></i>,
   CSS: <i className="devicon-css3-plain"></i>,
   javascript: <i className="devicon-javascript-plain"></i>,
-  nextjs: <i className="devicon-nextjs-original"></i>,
+  nextjs: <i className="devicon-nextjs-plain"></i>,
   tailwind: <i className="devicon-tailwindcss-plain"></i>,
   bootstrap: <i className="devicon-bootstrap-plain"></i>,
   redux: <i className="devicon-redux-original"></i>,
@@ -42,7 +42,7 @@ export const iconBar = [
     name: "TypeScript",
   },
   {
-    icon: <i className="devicon-nextjs-original"></i>,
+    icon: <i className="devicon-nextjs-plain"></i>,
     name: "Next.js",
   },
   {
